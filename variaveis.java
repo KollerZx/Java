@@ -42,10 +42,6 @@ boolean fim = true;
 
 //Tipos de Operadores
 
-//Unários são aplicados sobre uma única variavel
-
-x++ //Incremento de +1 na variavel x)
-
 /*
 Ordem de execução sempre da esquerda para a direita, na ordem que estiverem definidos na expressão
 / -> Divisão             1º
@@ -62,22 +58,32 @@ Ordem de execução sempre da esquerda para a direita, na ordem que estiverem de
 /= -> Divisão e atribuição | Ex: a/=b => a = a/b
 %= -> Resto e atribuição | Ex: a%=b => a = a%b
 */
-    
+
+//Operadores de Precedência
+int x = 1;
+int z = x++; // Primeiro atribui o valor para variavel Z, Depois incrementa a variavel x
+z = 1 , x = 2;
+
+int x = 1;
+int z = ++x; // Primeiro Incrementa o valor de x. Depois, atribui o valor para variavel z
+z = 2, x =2;
+// O mesmo se aplica para operação de subtração.
+
 
 //Operadores Lógicos ou Booleanos
     
 
 //Conjunção (AND) = &&
-    x = 2;
-    y = 4 - x;
+    int x = 2;
+    int y = 4 - x;
     if (x = 2 && y = 2){
         System.out.println("Ola Mundo!");
     }
 // No exemplo acima, a mensagem "Ola Mundo!" só sera exibida se x e y forem igual a 2.
 
 //Disjunção (OR) = ||  
-    x = 1;
-    y = 2;
+    int x = 1;
+    int y = 2;
     if (x = 1 || y = 1) {
         System.out.println("Ola Mundo!");
     }

@@ -34,3 +34,22 @@ public class Jogador {
     }
 }
 
+//Operadores instanceof e new
+
+/*Java é uma linguagem orientada a objetos. Desse modo, além dos operadores aritméticos, 
+relacionais e lógicos, há alguns operadores para objetos.*/
+
+/* instanceof
+   O operador instanceof aplica um comparativo do objeto que está "instanciado" no objeto.
+   Ex:
+*/
+Objeto obj = new String("Exemplo");
+
+if(obj instanceof String){
+    System.out.println("Comparativo positivo");
+}
+/*  new
+    O operador new é aplicado para definir novas "instance" de classes.
+    Ex:
+*/
+Hello hello = new Hello();

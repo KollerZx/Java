@@ -73,7 +73,7 @@ z = 2, x =2;
 //Operadores Lógicos ou Booleanos
     
 
-//Conjunção (AND) = &&
+//Conjunção (AND) = && => true && false = false
     int x = 2;
     int y = 4 - x;
     if (x = 2 && y = 2){
@@ -81,7 +81,7 @@ z = 2, x =2;
     }
 // No exemplo acima, a mensagem "Ola Mundo!" só sera exibida se x e y forem igual a 2.
 
-//Disjunção (OR) = ||  
+//Disjunção (OR) = ||  => false || true = true
     int x = 1;
     int y = 2;
     if (x = 1 || y = 1) {
@@ -90,5 +90,5 @@ z = 2, x =2;
 /* No exemplo acima, a mensagem "Ola Mundo!" sera exibida se x ou y for igual a um, ou seja, basta que apenas uma delas
 seja para que a mensagem seja exibida.*/
 
-//Negação (NOT) = !
-
+//Negação (NOT) = ! => !false = true
+//Ou Exclusivo (XOR) = ^ => true ^ true = false

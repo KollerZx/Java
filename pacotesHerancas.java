@@ -44,7 +44,73 @@ public class Animal {
     private String tipo;
     private String nome;
     
-    public String getTipo {
+    public String getTipo() {
+        return this.tipo;
+    }
+    public void setTipo(String tipo){
+        this.tipo = tipo;
+    }
+    public String getNome(){
+        return this.nome;
+    }
+    public void setNome(String nome){
+        this.nome = tipo;
+    }
+    
+    public void som(){
+        System.out.println("Au au!");
+    }
+}
+
+public class Gato extends Animal { //herdando as caracteristicas da classe Animal
+    public void Gato() {
+        this.setTipo("mamíferos");
+    }
+    @Override   //Sobrescrevendo o método som
+    public void som(){
+        System.out.println("Miau!");
+    }
+}
+public class Galinha extends Animal {
+    public void Galinha(){
+        this.setTipo("aves");
+    }
+    @Override
+    public void som(){
+        System.out.println("cocoricó!");
+    }
+}
+public class Sapo extends Animal {
+    public void Sapo(){
+        this.setTipo("anfíbio");
+    }
+    @Override
+    public void som(){
+        System.out.println("Frog!");
+    }
+}
+/* 
+## No método de herança, não é necessário criar os atributos “nome” e “tipo” em todas as classes, pois eles já existem na superclasse Animal. ## 
+*/
+
+// Método main
+/* No método main, serão instanciados os objetos e executada a saída das informações. */
+
+public class Main {
+    public static void main (String[] args){
+        System.out.println("O Som dos meus animais!");
+        
+        Gato meuGato = new Gato();  //Instancia o objeto
+        System.out.println("Meu gato faz");
+        meuGato.som(); //Executa o método som do objeto
+        
+        Sapo meuSapo = new Sapo();
+        System.ou.println("Meu sapo faz");
+        meuSapo.som();
+        
+        Galinha minhaGalinha = new Galinha();
+        System.out.println("Minha galinha faz");
+        minhaGalinha.som();
         
     }
 }
